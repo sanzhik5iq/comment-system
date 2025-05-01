@@ -1,8 +1,6 @@
-// src/redux/commentsSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Создаем асинхронный thunk для загрузки комментариев
 export const fetchComments = createAsyncThunk(
   'comments/fetchComments',
   async () => {
@@ -15,11 +13,10 @@ const commentsSlice = createSlice({
   name: 'comments',
   initialState: {
     comments: [],
-    status: 'idle', // idle, loading, succeeded, failed
+    status: 'idle',
     error: null
   },
   reducers: {
-    // Добавление нового комментария (если нужно будет)
     addComment(state, action) {
       state.comments.push(action.payload);
     }

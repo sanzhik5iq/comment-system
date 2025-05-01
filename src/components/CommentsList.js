@@ -1,4 +1,3 @@
-// src/components/CommentsList.js
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchComments } from '../redux/commentsSlice';

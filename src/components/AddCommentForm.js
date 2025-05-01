@@ -1,4 +1,3 @@
-// src/components/AddCommentForm.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addComment } from '../redux/commentsSlice';
